@@ -1,4 +1,7 @@
 ### NPM ###
 node_modules
 
+### Packages ###
+package-lock.json
+
 ## DB keys
