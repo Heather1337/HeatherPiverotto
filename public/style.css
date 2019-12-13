@@ -1,0 +1,14 @@
+#homeTitle {
+  font-family: "Helvetica Neue";
+  color:	#080808;
+}
+
+.homeNavLink, .portfolioNavLink, .contactNavLink {
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  padding: 20px 20px 20px 20px;
+  float: right;
+}
+
+.homeNavLink:hover, .portfolioNavLink:hover, .contactNavLink:hover {
+  color: #585858;
+}
