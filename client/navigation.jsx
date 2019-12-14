@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const NavButtonDiv = styled.div`
-  border: 1px solid blue;
   margin-left: calc(50% - 50vw);
   width: 100vw;
   display: inline-block;
+  border-bottom: 2px solid black;
 `;
 
 const Navigation = () => {

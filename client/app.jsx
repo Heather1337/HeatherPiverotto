@@ -19,11 +19,7 @@ class App extends Component {
       return (      
         <BrowserRouter>
           <div>
-
-            <TopBarNavigation> 
-              <Navigation />
-            </TopBarNavigation>
-
+            <Navigation/>
             <TopBarNavigation>
               <Switch>
                 <Route path="/" component={Home} exact/>
