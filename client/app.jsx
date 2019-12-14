@@ -15,6 +15,19 @@ const TopBarNavigation = styled.div`
 `;
 
 class App extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {}
+      this.handleQuestionSubmit = this.handleQuestionSubmit.bind(this);
+    }
+
+    handleQuestionSubmit(e) {
+      e.preventDefault();
+      var data = document.getElementById("visitorMessage").value;
+      console.log('Ive been clicked!', data);
+      
+    }
+
     render() {
       return (      
         <BrowserRouter>
@@ -24,7 +37,8 @@ class App extends Component {
               <Switch>
                 <Route path="/" component={Home} exact/>
                 <Route path="/portfolio" component={Portfolio}/>
-                <Route path="/contact" component={Contact}/>
+                <Route path="/contact" render={(props) => <Contact handleClick={this.handleQuestionSubmit}/>}/>
+                {/* <Route path="/contact" component={Contact}/> */}
                 <Route component={Error}/>
                </Switch>
             </TopBarNavigation>

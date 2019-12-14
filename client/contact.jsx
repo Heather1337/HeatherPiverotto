@@ -12,6 +12,12 @@ const contact = (props) => {
     return (
       <ContactMeDiv>
         <p>Heather Piverotto<br />Location: San Francisco<br />email: heatherlynn1337@gmail.com <br /></p>
+        <form>
+          <label>Send me a message:</label>
+          <input id="visitorMessage" type="textarea" name="message" size="100"/>
+          {/* <input type="textarea" size="100" style={{height: '200px'}}/> */}
+          <button onClick={props.handleClick}>Send message</button>
+        </form>
       </ContactMeDiv>
     )
 };
